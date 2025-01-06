@@ -38,13 +38,16 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Button size="lg" className="bg-primary hover:bg-primary-dark text-white transition-all">
             Get Started Free
           </Button>
           <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
             See How It Works
+          </Button>
+          <Button size="lg" variant="secondary" className="bg-secondary hover:bg-secondary/90">
+            Join Waitlist
           </Button>
         </motion.div>
       </div>
