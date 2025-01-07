@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { colors } from "./src/theme/colors";
 
 export default {
   darkMode: ["class"],
@@ -18,43 +19,7 @@ export default {
       },
     },
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "#edf7f6",
-        foreground: "#022F40",
-        primary: {
-          DEFAULT: "#3083dc",
-          light: "#5599e3",
-          dark: "#246db5",
-          foreground: "#022F40",
-        },
-        secondary: {
-          DEFAULT: "#ff01fb",
-          foreground: "#022F40",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "#022f40",
-          foreground: "#edf7f6",
-        },
-        accent: {
-          DEFAULT: "#ff6978",
-          foreground: "#edf7f6",
-        },
-        popover: {
-          DEFAULT: "#edf7f6",
-          foreground: "#022f40",
-        },
-        card: {
-          DEFAULT: "#edf7f6",
-          foreground: "#022f40",
-        },
-      },
+      colors: colors,
       keyframes: {
         "fade-up": {
           "0%": {
