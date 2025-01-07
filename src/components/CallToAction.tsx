@@ -2,13 +2,36 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 export const CallToAction = () => {
   const [email, setEmail] = useState("");
+  const { toast } = useToast();
 
-  const handleJoinWaitlist = () => {
-    if (email) {
-      console.log("Email submitted:", email);
+  const handleJoinWaitlist = async () => {
+    if (!email) return;
+
+    try {
+      const { error } = await supabase
+        .from('waitlist')
+        .insert([{ email }]);
+
+      if (error) throw error;
+
+      toast({
+        title: "Success!",
+        description: "You're on the waitlist!",
+      });
+      
+      setEmail("");
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+      });
     }
   };
 
