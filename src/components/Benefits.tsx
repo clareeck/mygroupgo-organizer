@@ -6,7 +6,9 @@ export const Benefits = () => {
     "Set up in 2 mins.",
     "Track everything in your group dashboard.",
     "Personalised URL to share with your group.",
-    "No more long whatsapp message chains."
+    "No more long whatsapp message chains to assign tasks.",
+    "Send broadcast communications to the group.",
+    "No awkward reminders. We can send reminders for you."
   ];
 
   return (
