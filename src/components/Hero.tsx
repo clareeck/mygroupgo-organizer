@@ -1,7 +1,18 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export const Hero = () => {
+  const [email, setEmail] = useState("");
+
+  const handleJoinWaitlist = () => {
+    if (email) {
+      // Here you would typically handle the email submission
+      console.log("Email submitted:", email);
+    }
+  };
+
   return (
     <section className="min-h-[80vh] flex items-center justify-center bg-background px-4">
       <div className="max-w-6xl mx-auto text-center">
@@ -38,14 +49,28 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col items-center gap-4 max-w-md mx-auto"
         >
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
-            See How It Works
-          </Button>
-          <Button size="lg" variant="secondary" className="bg-secondary hover:bg-secondary/90">
-            Join Waitlist
-          </Button>
+          <Input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full"
+          />
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 w-full sm:w-auto">
+              See How It Works
+            </Button>
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="bg-secondary hover:bg-secondary/90 w-full sm:w-auto"
+              onClick={handleJoinWaitlist}
+            >
+              Join Waitlist
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>
