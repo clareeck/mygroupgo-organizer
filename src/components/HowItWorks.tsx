@@ -51,7 +51,7 @@ export const HowItWorks = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative"
+              className="relative bg-white rounded-xl shadow-md p-6"
             >
               <div className="text-6xl font-bold text-primary/20 mb-4">{step.number}</div>
               <h3 className="text-xl font-semibold mb-2 text-text">{step.title}</h3>
