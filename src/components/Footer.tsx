@@ -6,8 +6,12 @@ export const Footer = () => {
     <footer className="py-8 bg-background border-t">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-foreground">
-            MyGroupGo
+          <div>
+            <img 
+              src="/lovable-uploads/77bca66d-206a-4cf5-b0d5-7512af5704e9.png" 
+              alt="MyGroupGo Logo" 
+              className="h-8"
+            />
           </div>
           <div className="flex items-center gap-6">
             <a
