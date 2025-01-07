@@ -56,7 +56,7 @@ export const Hero = () => {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full max-w-md bg-white"
+            className="w-full max-w-md bg-white placeholder:text-foreground"
           />
           <Button 
             size="lg" 
