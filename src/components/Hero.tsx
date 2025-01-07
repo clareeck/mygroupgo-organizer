@@ -37,13 +37,13 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-[80vh] flex items-center justify-center bg-background px-4">
+    <section className="min-h-[90vh] flex items-center justify-center bg-white px-4 pt-20">
       <div className="max-w-6xl mx-auto text-center">
         <motion.span 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-block px-4 py-1 mb-6 text-sm font-medium text-primary-dark bg-primary/10 rounded-full"
+          className="inline-block px-6 py-2 mb-8 text-sm font-medium text-primary-dark bg-primary/5 rounded-full"
         >
           Organize Teams Effortlessly
         </motion.span>
@@ -52,7 +52,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl md:text-6xl font-bold mb-6 text-text"
+          className="text-5xl md:text-7xl font-bold mb-8 text-foreground leading-tight"
         >
           Bring Your Team Together
           <br />
@@ -63,7 +63,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-text/80 mb-8 max-w-2xl mx-auto"
+          className="text-xl md:text-2xl text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed"
         >
           Simplify team management, coordinate practices, and organize carpools - all in one place. Perfect for sports teams, music groups, and social clubs.
         </motion.p>
@@ -72,20 +72,19 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex justify-center items-center gap-4 max-w-2xl mx-auto"
+          className="flex flex-col md:flex-row justify-center items-center gap-4 max-w-2xl mx-auto"
         >
           <Input
             type="email"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full max-w-md bg-white placeholder:text-foreground"
+            className="w-full max-w-md bg-white border-2 border-gray-200 placeholder:text-gray-400 h-14 text-lg rounded-xl focus:border-primary"
           />
           <Button 
             size="lg" 
-            variant="secondary" 
-            className="bg-secondary hover:bg-primary-dark whitespace-nowrap"
             onClick={handleJoinWaitlist}
+            className="w-full md:w-auto bg-primary hover:bg-primary-dark text-white px-8 h-14 text-lg font-medium rounded-xl transition-all duration-300 hover:shadow-lg"
           >
             Join Waitlist
           </Button>
