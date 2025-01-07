@@ -21,7 +21,7 @@ export const CallToAction = () => {
       toast("Success!", {
         description: "You're on the waitlist!",
         position: "top-center",
-        className: "bg-[#4ecdc4] text-white border-none",
+        className: "bg-[#FFE66D] text-foreground border-none",
         duration: 3000,
       });
       
