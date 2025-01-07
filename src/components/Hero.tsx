@@ -49,28 +49,23 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col items-center gap-4 max-w-md mx-auto"
+          className="flex justify-center items-center gap-4 max-w-2xl mx-auto"
         >
           <Input
             type="email"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full"
+            className="w-full max-w-md"
           />
-          <div className="flex flex-col sm:flex-row gap-4 w-full">
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 w-full sm:w-auto">
-              See How It Works
-            </Button>
-            <Button 
-              size="lg" 
-              variant="secondary" 
-              className="bg-secondary hover:bg-secondary/90 w-full sm:w-auto"
-              onClick={handleJoinWaitlist}
-            >
-              Join Waitlist
-            </Button>
-          </div>
+          <Button 
+            size="lg" 
+            variant="secondary" 
+            className="bg-secondary hover:bg-primary-dark whitespace-nowrap"
+            onClick={handleJoinWaitlist}
+          >
+            Join Waitlist
+          </Button>
         </motion.div>
       </div>
     </section>
