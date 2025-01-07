@@ -4,22 +4,17 @@ const steps = [
   {
     number: "01",
     title: "Create Your Group",
-    description: "Set up your team profile and invite members to join."
+    description: "Set up your team profile"
   },
   {
     number: "02",
-    title: "Schedule Events",
-    description: "Add practices, games, or meetings to your group calendar."
+    title: "Invite Members to Join",
+    description: "Send a secure link to invite members to join."
   },
   {
     number: "03",
-    title: "Assign Tasks",
-    description: "Create and delegate tasks to team members."
-  },
-  {
-    number: "04",
-    title: "Coordinate Travel",
-    description: "Organize carpools and manage transportation logistics."
+    title: "Schedule Events & Assign Tasks",
+    description: "Add practices, games, or meetings to your group calendar. Create and delegate tasks to team members."
   }
 ];
 
@@ -44,11 +39,11 @@ export const HowItWorks = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg text-text/70"
           >
-            Get your team organized in four simple steps
+            Get your team organized in three simple steps
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={step.number}
