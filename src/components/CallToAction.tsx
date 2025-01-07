@@ -21,7 +21,7 @@ export const CallToAction = () => {
       toast("Success!", {
         description: "You're on the waitlist!",
         position: "top-center",
-        className: "bg-primary text-white border-none",
+        className: "bg-[#4ecdc4] text-white border-none",
         duration: 3000,
       });
       
@@ -31,7 +31,7 @@ export const CallToAction = () => {
       toast("Error", {
         description: "Something went wrong. Please try again.",
         position: "top-center",
-        className: "bg-accent text-white border-none",
+        className: "bg-[#ff6b6b] text-white border-none",
       });
     }
   };
