@@ -1,42 +1,42 @@
 export const colors = {
   // Main colors
-  foreground: '#4e4187', // Purple for text
-  background: '#f0f7ee', // Light mint
+  foreground: '#1A535C', // Dark teal for text
+  background: '#f7fff7', // Light mint/white for background
   
   // Primary colors
   primary: {
-    DEFAULT: '#3083dc', // Blue
-    light: '#5599e3',   // Lighter blue
-    dark: '#246db5',    // Darker blue
-    foreground: '#4e4187', // Purple text on primary
+    DEFAULT: '#4ecdc4', // Bright teal
+    light: '#7ad8d1',   // Lighter teal
+    dark: '#3ba59e',    // Darker teal
+    foreground: '#ffffff', // White text on primary
   },
   
   // Secondary colors
   secondary: {
-    DEFAULT: '#afdedc', // Light teal
-    foreground: '#4e4187', // Purple text on secondary
+    DEFAULT: '#1A535C', // Dark teal
+    foreground: '#ffffff', // White text on secondary
   },
   
   // Accent colors
   accent: {
-    DEFAULT: '#ff6978', // Coral pink
-    foreground: '#f0f7ee', // Light mint text on accent
+    DEFAULT: '#ff6b6b', // Coral red
+    foreground: '#ffffff', // White text on accent
   },
   
   // Muted colors
   muted: {
-    DEFAULT: '#4e4187', // Purple
-    foreground: '#f0f7ee', // Light mint text on muted
+    DEFAULT: '#ffe66d', // Soft yellow
+    foreground: '#1A535C', // Dark teal text on muted
   },
   
   // UI elements
   card: {
-    DEFAULT: '#f0f7ee', // Light mint
-    foreground: '#4e4187', // Purple text on card
+    DEFAULT: '#ffffff', // Pure white
+    foreground: '#1A535C', // Dark teal text on card
   },
   
   popover: {
-    DEFAULT: '#f0f7ee', // Light mint
-    foreground: '#4e4187', // Purple text on popover
+    DEFAULT: '#ffffff', // Pure white
+    foreground: '#1A535C', // Dark teal text on popover
   },
 } as const;
