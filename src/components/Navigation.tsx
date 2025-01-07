@@ -48,7 +48,7 @@ export const Navigation = () => {
             How It Works
           </Link>
           <Button variant="secondary" size="sm">
-            Join Waitlist
+            Log in
           </Button>
         </div>
       </div>
