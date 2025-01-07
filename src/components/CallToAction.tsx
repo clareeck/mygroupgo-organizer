@@ -3,11 +3,10 @@ import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 
 export const CallToAction = () => {
   const [email, setEmail] = useState("");
-  const { toast } = useToast();
 
   const handleJoinWaitlist = async () => {
     if (!email) return;
@@ -19,18 +18,20 @@ export const CallToAction = () => {
 
       if (error) throw error;
 
-      toast({
-        title: "Success!",
+      toast("Success!", {
         description: "You're on the waitlist!",
+        position: "top-center",
+        className: "bg-primary text-white border-none",
+        duration: 3000,
       });
       
       setEmail("");
     } catch (error) {
       console.error('Error:', error);
-      toast({
-        variant: "destructive",
-        title: "Error",
+      toast("Error", {
         description: "Something went wrong. Please try again.",
+        position: "top-center",
+        className: "bg-accent text-white border-none",
       });
     }
   };
