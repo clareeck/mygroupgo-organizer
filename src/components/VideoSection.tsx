@@ -51,9 +51,9 @@ export const VideoSection = () => {
           ) : (
             <iframe
               className="w-full aspect-video"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://player.vimeo.com/video/1046083661"
               title="MyGroupGo Demo Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
             />
           )}
