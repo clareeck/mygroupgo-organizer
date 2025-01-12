@@ -28,11 +28,11 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
+          className="text-5xl md:text-7xl font-bold mb-6"
         >
-          Bring Your Team Together
+          <span className="text-[#1A535C]">Bring Your Team Together</span>
           <br />
-          <span className="text-foreground">Like Never Before</span>
+          <span className="text-[#4ecdc4]">Like Never Before</span>
         </motion.h1>
 
         <motion.p 
