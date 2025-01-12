@@ -12,15 +12,15 @@ const benefits = [
 
 export const Benefits = () => {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-32 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold text-text mb-4"
+            className="text-4xl md:text-5xl font-bold text-foreground mb-6"
           >
             Benefits
           </motion.h2>
@@ -29,13 +29,13 @@ export const Benefits = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-text/70"
+            className="text-xl text-muted-foreground"
           >
             Why teams love using MyGroupGo
           </motion.p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto bg-gradient-to-br from-background to-primary/5 rounded-3xl p-12 shadow-xl shadow-primary/5">
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit}
@@ -43,10 +43,12 @@ export const Benefits = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex items-start space-x-4 mb-6"
+              className="flex items-start space-x-6 mb-8 last:mb-0"
             >
-              <Check className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <p className="text-lg text-text/80">{benefit}</p>
+              <div className="bg-primary/10 rounded-full p-2">
+                <Check className="w-6 h-6 text-primary flex-shrink-0" />
+              </div>
+              <p className="text-xl text-muted-foreground leading-relaxed">{benefit}</p>
             </motion.div>
           ))}
         </div>

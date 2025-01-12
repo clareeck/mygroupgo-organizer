@@ -1,42 +1,42 @@
 export const colors = {
   // Main colors
-  foreground: '#1A535C', // Dark teal for text
-  background: '#f7fff7', // Light mint/white for background
+  foreground: '#1E293B', // Slate-800 for text
+  background: '#F8FAFC', // Slate-50 for background
   
   // Primary colors
   primary: {
-    DEFAULT: '#4ecdc4', // Bright teal
-    light: '#7ad8d1',   // Lighter teal
-    dark: '#3ba59e',    // Darker teal
-    foreground: '#ffffff', // White text on primary
+    DEFAULT: '#6366F1', // Indigo-500
+    light: '#818CF8',   // Indigo-400
+    dark: '#4F46E5',    // Indigo-600
+    foreground: '#FFFFFF',
   },
   
   // Secondary colors
   secondary: {
-    DEFAULT: '#1A535C', // Dark teal
-    foreground: '#ffffff', // White text on secondary
+    DEFAULT: '#1E293B', // Slate-800
+    foreground: '#FFFFFF',
   },
   
   // Accent colors
   accent: {
-    DEFAULT: '#ff6b6b', // Coral red
-    foreground: '#ffffff', // White text on accent
+    DEFAULT: '#F472B6', // Pink-400
+    foreground: '#FFFFFF',
   },
   
   // Muted colors
   muted: {
-    DEFAULT: '#ffe66d', // Soft yellow
-    foreground: '#1A535C', // Dark teal text on muted
+    DEFAULT: '#F1F5F9', // Slate-100
+    foreground: '#475569', // Slate-600
   },
   
   // UI elements
   card: {
-    DEFAULT: '#ffffff', // Pure white
-    foreground: '#1A535C', // Dark teal text on card
+    DEFAULT: '#FFFFFF',
+    foreground: '#1E293B',
   },
   
   popover: {
-    DEFAULT: '#ffffff', // Pure white
-    foreground: '#1A535C', // Dark teal text on popover
+    DEFAULT: '#FFFFFF',
+    foreground: '#1E293B',
   },
 } as const;
