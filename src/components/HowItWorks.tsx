@@ -20,7 +20,7 @@ const steps = [
 
 export const HowItWorks = () => {
   return (
-    <section className="py-20 px-4 bg-accent/20">
+    <section className="py-20 px-4 bg-[#f7fff7]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2 
@@ -28,7 +28,7 @@ export const HowItWorks = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold text-text mb-4"
+            className="text-3xl md:text-4xl font-bold text-[#1A535C] mb-4"
           >
             How MyGroupGo Works
           </motion.h2>
@@ -37,7 +37,7 @@ export const HowItWorks = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-lg text-text/70"
+            className="text-lg text-[#1A535C]/70"
           >
             Get your team organized in three simple steps
           </motion.p>
@@ -53,9 +53,9 @@ export const HowItWorks = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative bg-white rounded-xl shadow-md p-6"
             >
-              <div className="text-6xl font-bold text-primary mb-4">{step.number}</div>
-              <h3 className="text-xl font-semibold mb-2 text-text">{step.title}</h3>
-              <p className="text-text/70">{step.description}</p>
+              <div className="text-6xl font-bold text-[#4ecdc4] mb-4">{step.number}</div>
+              <h3 className="text-xl font-semibold mb-2 text-[#1A535C]">{step.title}</h3>
+              <p className="text-[#1A535C]/70">{step.description}</p>
             </motion.div>
           ))}
         </div>
