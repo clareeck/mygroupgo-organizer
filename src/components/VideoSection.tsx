@@ -34,29 +34,30 @@ export const VideoSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl relative group cursor-pointer"
-          onClick={() => setIsPlaying(true)}
+          className="max-w-4xl mx-auto overflow-hidden shadow-xl relative group cursor-pointer bg-white rounded-xl border border-gray-200/50"
         >
-          {!isPlaying ? (
-            <>
-              <img 
-                src="/lovable-uploads/faf6d346-1556-42b7-8831-35a841af320f.png" 
-                alt="MyGroupGo Demo Video Thumbnail" 
-                className="w-full h-auto"
+          <div className="aspect-video w-full">
+            {!isPlaying ? (
+              <>
+                <img 
+                  src="/lovable-uploads/faf6d346-1556-42b7-8831-35a841af320f.png" 
+                  alt="MyGroupGo Demo Video Thumbnail" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
+                  <Play className="w-16 h-16 text-white group-hover:scale-110 transition-transform" />
+                </div>
+              </>
+            ) : (
+              <iframe
+                className="w-full h-full"
+                src="https://player.vimeo.com/video/1046083661"
+                title="MyGroupGo Demo Video"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-                <Play className="w-16 h-16 text-white group-hover:scale-110 transition-transform" />
-              </div>
-            </>
-          ) : (
-            <iframe
-              className="w-full aspect-video"
-              src="https://player.vimeo.com/video/1046083661"
-              title="MyGroupGo Demo Video"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            />
-          )}
+            )}
+          </div>
         </motion.div>
       </div>
     </section>

@@ -5,9 +5,9 @@ export const colors = {
   
   // Primary colors
   primary: {
-    DEFAULT: '#6366F1', // Indigo-500
-    light: '#818CF8',   // Indigo-400
-    dark: '#4F46E5',    // Indigo-600
+    DEFAULT: '#646cff', // Original primary color
+    light: '#747bff',   
+    dark: '#535bf2',    
     foreground: '#FFFFFF',
   },
   
@@ -19,7 +19,7 @@ export const colors = {
   
   // Accent colors
   accent: {
-    DEFAULT: '#F472B6', // Pink-400
+    DEFAULT: '#61dafb', // Original accent color
     foreground: '#FFFFFF',
   },
   
