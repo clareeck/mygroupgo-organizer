@@ -26,15 +26,15 @@ const features = [
 
 export const Features = () => {
   return (
-    <section className="py-24 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold text-foreground mb-6"
+            className="text-3xl md:text-4xl font-bold text-text mb-4"
           >
             Everything You Need to Manage Your Team
           </motion.h2>
@@ -43,7 +43,7 @@ export const Features = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-xl text-foreground/70 max-w-3xl mx-auto"
+            className="text-lg text-text/70"
           >
             Powerful features designed to make team organization effortless
           </motion.p>
@@ -57,11 +57,11 @@ export const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="p-8 rounded-2xl bg-white hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="p-6 rounded-2xl bg-background hover:shadow-lg transition-all duration-300"
             >
-              <feature.icon className="w-12 h-12 text-primary mb-6" />
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">{feature.title}</h3>
-              <p className="text-lg text-foreground/70 leading-relaxed">{feature.description}</p>
+              <feature.icon className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-text">{feature.title}</h3>
+              <p className="text-text/70">{feature.description}</p>
             </motion.div>
           ))}
         </div>
