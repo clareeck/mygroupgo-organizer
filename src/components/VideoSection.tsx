@@ -49,14 +49,13 @@ export const VideoSection = () => {
               </div>
             </>
           ) : (
-            <video 
-              className="w-full h-auto"
-              controls
-              autoPlay
-              src="/lovable-uploads/faf6d346-1556-42b7-8831-35a841af320f.mp4"
-            >
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full aspect-video"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+              title="MyGroupGo Demo Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           )}
         </motion.div>
       </div>
