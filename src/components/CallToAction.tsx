@@ -21,7 +21,7 @@ export const CallToAction = () => {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#1A535C]">
             Organize your group now
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
