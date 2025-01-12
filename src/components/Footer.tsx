@@ -1,4 +1,3 @@
-import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -13,15 +12,7 @@ export const Footer = () => {
               className="h-8"
             />
           </div>
-          <div className="flex items-center gap-6">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              <Instagram className="h-6 w-6" />
-            </a>
+          <div>
             <Link
               to="/privacy-policy"
               className="text-foreground hover:text-primary transition-colors"
