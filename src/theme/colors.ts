@@ -1,42 +1,42 @@
 export const colors = {
   // Main colors
-  foreground: '#1E293B', // Slate-800 for text
-  background: '#F8FAFC', // Slate-50 for background
+  foreground: '#1A535C', // Dark teal for text
+  background: '#f7fff7', // Light mint for background
   
   // Primary colors
   primary: {
-    DEFAULT: '#646cff', // Original primary color
-    light: '#747bff',   
-    dark: '#535bf2',    
+    DEFAULT: '#4ecdc4', // Bright teal
+    light: '#6ed7d0',   // Lighter teal
+    dark: '#3eb8b0',    // Darker teal
     foreground: '#FFFFFF',
   },
   
   // Secondary colors
   secondary: {
-    DEFAULT: '#1E293B', // Slate-800
+    DEFAULT: '#1A535C', // Dark teal
     foreground: '#FFFFFF',
   },
   
   // Accent colors
   accent: {
-    DEFAULT: '#61dafb', // Original accent color
+    DEFAULT: '#ff6b6b', // Coral red
     foreground: '#FFFFFF',
   },
   
   // Muted colors
   muted: {
-    DEFAULT: '#F1F5F9', // Slate-100
-    foreground: '#475569', // Slate-600
+    DEFAULT: '#f7fff7', // Light mint
+    foreground: '#1A535C', // Dark teal
   },
   
   // UI elements
   card: {
     DEFAULT: '#FFFFFF',
-    foreground: '#1E293B',
+    foreground: '#1A535C',
   },
   
   popover: {
     DEFAULT: '#FFFFFF',
-    foreground: '#1E293B',
+    foreground: '#1A535C',
   },
 } as const;
