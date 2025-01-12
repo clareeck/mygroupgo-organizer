@@ -21,6 +21,11 @@ export const Hero = () => {
         toast({
           title: "Success! You're on the waitlist.",
           duration: 1000,
+          className: "bg-[#ffe66D]",
+          style: { 
+            top: '50%',
+            transform: 'translateY(-50%)'
+          }
         });
         
         setEmail("");
@@ -30,6 +35,10 @@ export const Hero = () => {
           title: "This email is already on the waitlist",
           variant: "destructive",
           duration: 1000,
+          style: { 
+            top: '50%',
+            transform: 'translateY(-50%)'
+          }
         });
       }
     }

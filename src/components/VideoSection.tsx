@@ -35,6 +35,7 @@ export const VideoSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="max-w-4xl mx-auto overflow-hidden shadow-xl relative group cursor-pointer bg-white rounded-xl border border-gray-200/50"
+          onClick={() => setIsPlaying(true)}
         >
           <div className="aspect-video w-full">
             {!isPlaying ? (
@@ -51,7 +52,7 @@ export const VideoSection = () => {
             ) : (
               <iframe
                 className="w-full h-full"
-                src="https://player.vimeo.com/video/1046083661"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                 title="MyGroupGo Demo Video"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
