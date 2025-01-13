@@ -15,11 +15,11 @@ const Index = () => {
       <section id="features">
         <Features />
       </section>
-      <section id="benefits">
-        <Benefits />
-      </section>
       <section id="video">
         <VideoSection />
+      </section>
+      <section id="benefits">
+        <Benefits />
       </section>
       <section id="how-it-works">
         <HowItWorks />

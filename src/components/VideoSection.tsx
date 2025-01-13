@@ -6,7 +6,7 @@ export const VideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="py-20 px-4 bg-accent/20">
+    <section className="py-20 px-4 bg-[#ffffff]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2 

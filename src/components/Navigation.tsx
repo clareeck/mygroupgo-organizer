@@ -47,13 +47,6 @@ export const Navigation = () => {
           >
             How It Works
           </Link>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-primary/20 hover:border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300"
-          >
-            Log in
-          </Button>
         </div>
       </div>
     </motion.nav>
