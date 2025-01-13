@@ -12,7 +12,7 @@ const benefits = [
 
 export const Benefits = () => {
   return (
-    <section className="py-32 px-4 bg-[#F1F0FB]">
+    <section className="py-32 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
           <motion.h2 

@@ -1,7 +1,7 @@
 export const colors = {
   // Main colors
   foreground: '#1A535C', // Dark teal for text
-  background: '#F1F0FB', // Soft gray for main background
+  background: '#f7fff7', // Light mint for background
   
   // Primary colors
   primary: {
@@ -19,14 +19,14 @@ export const colors = {
   
   // Accent colors
   accent: {
-    DEFAULT: '#E5DEFF', // Soft purple
-    foreground: '#1A535C',
+    DEFAULT: '#ff6b6b', // Coral red
+    foreground: '#FFFFFF',
   },
   
   // Muted colors
   muted: {
-    DEFAULT: '#F7F7F9', // Light gray
-    foreground: '#1A535C',
+    DEFAULT: '#f7fff7', // Light mint
+    foreground: '#1A535C', // Dark teal
   },
   
   // UI elements
