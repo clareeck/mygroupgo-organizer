@@ -53,7 +53,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
           className="inline-block px-6 py-2 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full shadow-sm"
         >
-          Organize Teams Effortlessly
+          Organize Groups Effortlessly
         </motion.span>
         
         <motion.h1 
@@ -62,7 +62,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold mb-6"
         >
-          <span className="text-[#1A535C]">Bring Your Team Together</span>
+          <span className="text-[#1A535C]">Bring Your Group Together</span>
           <br />
           <span className="text-[#4ecdc4]">Like Never Before</span>
         </motion.h1>
@@ -73,7 +73,9 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed"
         >
-          Simplify team management, coordinate practices, and organize carpools - all in one place. Perfect for sports teams, music groups, and social clubs.
+          Say goodbye to messy chats and scattered spreadsheets. 
+          <br />
+          Effortlessly organize kids’ sports teams and extra-curricular activity groups with schedules, updates, and communication in one place.
         </motion.p>
 
         <motion.div 

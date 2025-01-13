@@ -14,7 +14,7 @@ const steps = [
   {
     number: "03",
     title: "Schedule Events & Assign Tasks",
-    description: "Add practices, games, or meetings to your group calendar. Create and delegate tasks to team members."
+    description: "Add practices, games, or meetings to your group calendar. Create and delegate tasks to group members."
   }
 ];
 
@@ -39,7 +39,7 @@ export const HowItWorks = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg text-[#1A535C]/70"
           >
-            Get your team organized in three simple steps
+            Get your group organized in three simple steps
           </motion.p>
         </div>
 

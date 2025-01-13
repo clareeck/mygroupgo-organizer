@@ -9,7 +9,7 @@ const features = [
   },
   {
     icon: Users,
-    title: "Manage Teams",
+    title: "Manage Groups",
     description: "Keep track of attendance, roles, and responsibilities in one central location."
   },
   {
