@@ -31,7 +31,7 @@ export const Benefits = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xl text-muted-foreground"
           >
-            Why teams love using MyGroupGo
+            Why groups love using MyGroupGo
           </motion.p>
         </div>
 
