@@ -15,7 +15,7 @@ const features = [
   {
     icon: Car,
     title: "Coordinate Carpools",
-    description: "Organize transportation efficiently with our built-in carpool coordinator."
+    description: "Organise transportation efficiently with our built-in carpool coordinator."
   },
   {
     icon: CheckCircle,
@@ -36,7 +36,7 @@ export const Features = () => {
             transition={{ duration: 0.5 }}
             className="text-4xl md:text-5xl font-bold text-foreground mb-6"
           >
-            Everything You Need to Manage Your Team
+            Everything You Need to Manage Your Group
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export const Features = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            Powerful features designed to make team organization effortless
+            Powerful features designed to make group organisation effortless
           </motion.p>
         </div>
 
