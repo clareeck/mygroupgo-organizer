@@ -39,7 +39,7 @@ export const HowItWorks = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg text-[#1A535C]/70"
           >
-            Get your group organised in three simple steps
+            Get your group organized in three simple steps
           </motion.p>
         </div>
 

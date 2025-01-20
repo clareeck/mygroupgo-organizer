@@ -53,7 +53,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
           className="inline-block px-6 py-2 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full shadow-sm"
         >
-          Organise Groups Effortlessly
+          Organize Groups Effortlessly
         </motion.span>
         
         <motion.h1 
@@ -75,7 +75,7 @@ export const Hero = () => {
         >
           Say goodbye to messy chats and scattered spreadsheets. 
           <br />
-          Effortlessly organise kids’ sports teams and extra-curricular activity groups with schedules, updates, and communication in one place.
+          Effortlessly organize kids’ sports teams and extra-curricular activity groups with schedules, updates, and communication in one place.
         </motion.p>
 
         <motion.div 
