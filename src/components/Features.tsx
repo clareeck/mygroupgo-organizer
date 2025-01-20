@@ -45,7 +45,7 @@ export const Features = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            Powerful features designed to make team organization effortless
+            Powerful features designed to make team organisation effortless
           </motion.p>
         </div>
 
