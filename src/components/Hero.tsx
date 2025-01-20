@@ -53,7 +53,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
           className="inline-block px-6 py-2 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full shadow-sm"
         >
-          Organize Groups Effortlessly
+          Organise Groups Effortlessly
         </motion.span>
         
         <motion.h1 
